@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DevOps Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+<h2>DevOps</h2>
+
+<ul>
+<li>Dashboard</li>
+<li>Pipeline</li>
+<li>Containers</li>
+<li>Kubernetes</li>
+<li>Logs</li>
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>CI/CD Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+<h3>Build Success</h3>
+<p id="build">0</p>
+</div>
+
+<div class="card">
+<h3>Deployments</h3>
+<p id="deploy">0</p>
+</div>
+
+<div class="card">
+<h3>Running Pods</h3>
+<p id="pods">2</p>
+</div>
+
+</div>
+
+<h2>Pipeline</h2>
+
+<div class="pipeline">
+
+<div class="stage" id="s1">GitHub</div>
+<div class="stage" id="s2">Jenkins</div>
+<div class="stage" id="s3">Docker</div>
+<div class="stage" id="s4">Kubernetes</div>
+
+</div>
+
+<button onclick="runPipeline()">Run Deployment</button>
+
+<h2>Activity</h2>
+
+<table>
+<tr>
+<th>Service</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>Frontend</td>
+<td class="green">Running</td>
+</tr>
+
+<tr>
+<td>Backend</td>
+<td class="green">Running</td>
+</tr>
+
+<tr>
+<td>Database</td>
+<td class="green">Healthy</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
